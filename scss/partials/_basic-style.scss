@@ -4,16 +4,84 @@ xBasic style
 
 -------------------------------- */
 
+html {
+	background-image: url(/resources/trees3.png);
+}
+
 body p {
 	font-size: 1em;
 	margin: 0;
 	line-height: 1;
 }
 
+.summary:before {
+	content: " ";
+	width: 1200px;
+	height: 280px;
+	margin: 0 auto;
+	background: lightgrey;
+}
+
+.summary p:nth-of-type(2) {
+	border-top: 2px solid lightgrey;
+}
+
 h1 {
 	font-size: 2em;
+	margin-top: 1em;
+	margin-left: 1em;
 }
 
 h2 {
 	font-size: 1em;
+	padding-left: 4em;
+}
+
+li {
+	list-style-type: none;
+}
+
+.preamble::before,
+.explanation::after,
+.participation::before,
+.benefits::after,
+.requirements::before {
+	content: " ";
+	width: 430px;
+	height: 250px;
+	background: lightgrey;
+	margin: 0 auto;
+}
+
+.design-archives, .zen-resources {
+	background-color: lightgrey;
+}
+
+h3.resources,
+h3.archives,
+.design-archives ul li,
+.zen-resources ul li {
+	background-color: white;
+	border: 2px solid grey;
+}
+
+.explanation,
+.benefits {
+	text-align: right;
+}
+
+footer {
+	content: " ";
+	display: block;
+	padding-top: 10px;
+	border-top: 1px solid lightgrey;
+}
+
+p[role="contentinfo"] {
+	padding-top: 10px;
+}
+
+h3.select {
+	text-align: right;
+	margin-right: 2em;
 }

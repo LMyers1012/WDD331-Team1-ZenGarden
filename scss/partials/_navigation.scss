@@ -2,55 +2,9 @@
 
 //primary
 
-.other-links {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-.other-links a {
-  background-color: #008561;
-  padding: 12px 30px;
-  min-height: 43px;
-  border-radius: 25px;
-  color: white;
-  font-size: 1.6rem;
-  &:hover {
-    color: $color-white;
-    text-decoration: underline;
-    font-size: larger;
-    font-weight: bolder;
+.design-selection nav {
+  ul li {
+    display: inline-block;
   }
-}
-
-#navigation ul {
-  margin: 7px 0;
-  li {
-    padding: 10px;
-    display: inline;
-  }
-}
-
-.cd-primary-nav ul li a {
-  color: $color-1;
-  text-decoration: none;
-  &:hover {
-    color: $color-3;
-    text-decoration: underline;
-    font-size: larger;
-    font-weight: bolder;
-  }
-}
-.cd-secondary-nav {
-  background-color: $color-2;
-  padding: 10px;
-  margin: 4px;
-}
-.cd-secondary-nav ul li a {
-  color: $color-3;
-  text-decoration: none;
-  &:hover {
-    color: $color-white;
-    text-decoration: underline;
-    font-size: larger;
-    font-weight: bolder;
-  }
+  
 }
