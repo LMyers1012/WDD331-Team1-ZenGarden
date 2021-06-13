@@ -47,8 +47,9 @@ body {
   grid-column: 1/4;
   grid-row: 1/5;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 12% left 15%;
+  background-attachment: fixed;
 }
 .intro .summary p:nth-of-type(1) {
   grid-column: 2/3;
@@ -73,8 +74,9 @@ body {
   grid-column: 3/6;
   grid-row: 1/5;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 25% left 25%;
+  background-attachment: fixed;
 }
 .intro .preamble h3 {
   grid-column: 6/10;
@@ -113,8 +115,9 @@ body {
   grid-column: 5/8;
   grid-row: 1/4;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 37% left 65%;
+  background-attachment: fixed;
 }
 .supporting .explanation h3 {
   grid-column: 1/5;
@@ -140,8 +143,9 @@ body {
   grid-column: 3/6;
   grid-row: 1/5;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 50% left 40%;
+  background-attachment: fixed;
 }
 .supporting .participation h3 {
   grid-column: 6/10;
@@ -171,8 +175,9 @@ body {
   grid-column: 5/8;
   grid-row: 1/3;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 67% left 65%;
+  background-attachment: fixed;
 }
 .supporting .benefits h3 {
   grid-column: 1/5;
@@ -195,8 +200,9 @@ body {
   grid-column: 3/6;
   grid-row: 1/6;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 80% left 40%;
+  background-attachment: fixed;
 }
 .supporting .requirements h3 {
   grid-column: 6/10;
@@ -297,8 +303,9 @@ body {
   display: grid;
   grid-template: 60px 40px/600px;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 90% left 40%;
+  background-attachment: fixed;
 }
 .sidebar .wrapper .design-archives h3 {
   grid-column: 1/2;
@@ -341,8 +348,9 @@ body {
   display: grid;
   grid-template: 60px 80px/600px;
   background-image: url(/resources/trees3.png);
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top 96% left 40%;
+  background-attachment: fixed;
 }
 .sidebar .wrapper .zen-resources h3 {
   grid-column: 1/2;
@@ -393,6 +401,107 @@ body {
   padding-right: 58.725px;
 }
 
+/*Flor's code*/
+@media only screen and (max-width: 1400px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+  .summary {
+    border-top: #15362b 3px solid;
+  }
+
+  .summary:before {
+    display: none;
+    height: 40px;
+    display: none;
+  }
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5%;
+    width: fit-content;
+    align-content: center;
+  }
+
+  .intro header {
+    padding-left: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+  }
+
+  .intro header h1,
+.intro header h2 {
+    font-size: 1em;
+    text-align: lefts;
+  }
+
+  .intro .preamble {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .intro .preamble h3 {
+    order: 1;
+  }
+
+  .supporting .explanation,
+.supporting .participation,
+.supporting .benefits,
+.supporting .requirements {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .supporting .participation {
+    margin-top: 20px;
+  }
+
+  .sidebar .wrapper .zen-resources {
+    order: -10;
+  }
+
+  .intro,
+.supporting,
+.sidebar .wrapper,
+.sidebar .wrapper .design-selection {
+    display: flex;
+    flex-flow: column;
+  }
+
+  footer {
+    display: flex;
+    align-self: center;
+    order: 90;
+  }
+
+  .supporting footer {
+    order: 91;
+  }
+
+  .sidebar .wrapper .design-archives {
+    order: 89;
+  }
+
+  .sidebar .wrapper .design-selection {
+    display: none;
+  }
+}
 /* -------------------------------- 
 
 xTypography 

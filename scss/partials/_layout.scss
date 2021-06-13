@@ -25,8 +25,9 @@ $L: 1600px;
 $background: url(/resources/trees3.png);
 @mixin window($top, $right) {
   background-image: $background;
-  background-size: auto;
+  background-size: 100% auto;
   background-position: top $top left $right;
+  background-attachment: fixed;
 }
 
 // layout
@@ -399,5 +400,102 @@ body {
         }
       }
     }
+  }
+}
+
+/*Flor's code*/
+@media only screen and (max-width: 1400px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+  }
+
+  .summary {
+    border-top: #15362b 3px solid;
+  }
+  .summary:before {
+    display: none;
+    height: 40px;
+    display: none;
+  }
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5%;
+    width: fit-content;
+    align-content: center;
+  }
+
+  .intro header {
+    padding-left: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+  }
+  .intro header h1,
+  .intro header h2 {
+    font-size: 1em;
+    text-align: lefts;
+  }
+
+  .intro .preamble {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 60%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .intro .preamble h3 {
+    order: 1;
+  }
+
+  .supporting .explanation,
+  .supporting .participation,
+  .supporting .benefits,
+  .supporting .requirements {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .supporting .participation {
+    margin-top: 20px;
+  }
+  .sidebar .wrapper .zen-resources {
+    order: -10;
+  }
+
+  .intro,
+  .supporting,
+  .sidebar .wrapper,
+  .sidebar .wrapper .design-selection {
+    display: flex;
+    flex-flow: column;
+  }
+
+  footer {
+    display: flex;
+    align-self: center;
+    order: 90;
+  }
+
+  .supporting footer {
+    order: 91;
+  }
+
+  .sidebar .wrapper .design-archives {
+    order: 89;
+  }
+  .sidebar .wrapper .design-selection {
+    display: none;
   }
 }
