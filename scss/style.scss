@@ -8,12 +8,14 @@ Lindsey Myers
 
 //@import "partials/reset";
 @import "partials/prefix-mixins";
-@import "partials/layout"; // responsive grid and media queries
 @import "partials/colors";
 @import "partials/fonts";
-@import "partials/typography";
+@import "partials/layout";
 @import "partials/navigation";
 @import "partials/basic-style";
+@import "partials/lg_layout";
+@import "partials/sm_layout";
+@import "partials/typography";
 
 /* -------------------------------- 
 
@@ -38,4 +40,3 @@ body {
 xPatterns
 
 -------------------------------- */
-
