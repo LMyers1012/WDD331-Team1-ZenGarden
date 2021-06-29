@@ -13,8 +13,9 @@ Lindsey Myers
 @import "partials/layout";
 @import "partials/navigation";
 @import "partials/basic-style";
-@import "partials/lg_layout";
 @import "partials/sm_layout";
+@import "partials/md_layout";
+@import "partials/lg_layout";
 @import "partials/typography";
 
 /* -------------------------------- 
@@ -30,10 +31,6 @@ html {
   background-size: cover;
 }
 
-body {
-  /* this is the page background */
-  background-color: $color-4;
-}
 
 /* -------------------------------- 
 

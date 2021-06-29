@@ -4,6 +4,10 @@ xTypography
 
 -------------------------------- */
 
+body {
+  font-family: $primary-font;
+}
+
 h1,
 h2 {
   font-family: $secondary-font;
@@ -23,6 +27,10 @@ h1 {
   @include MQ(M) {
     font-size: 4rem;
   }
+
+  @include MQ(L) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
@@ -33,6 +41,10 @@ h2 {
   @include MQ(S) {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
+  }
+
+  @include MQ(L) {
+    font-size: 1.2rem;
   }
 }
 
@@ -45,6 +57,7 @@ p {
   font-size: 1.4rem;
   line-height: 1.4;
   color: lighten($color-2, 25%);
+  font-family: $primary-font;
 
   a {
     color: $color-1;

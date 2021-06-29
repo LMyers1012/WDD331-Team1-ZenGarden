@@ -1,0 +1,22 @@
+@media screen and (min-width: 800px) {
+  // breakpoints
+
+  $background: url(/resources/trees3.png);
+  @mixin window($top, $right) {
+    background-image: $background;
+    background-size: 100% auto;
+    background-position: top $top left $right;
+    background-attachment: fixed;
+  }
+
+  // Medium layout
+  body {
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  header {
+    padding: 1em;
+  }
+}

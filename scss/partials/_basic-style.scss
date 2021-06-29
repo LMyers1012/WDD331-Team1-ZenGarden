@@ -8,10 +8,17 @@ html {
 	background-image: url(/resources/trees3.png);
 }
 
-body p {
-	font-size: 1em;
-	margin: 0;
-	line-height: 1;
+body {
+  background-color: white;
+  p {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+header.banner {
+  background-color: $color-3;
 }
 
 .summary:before {
@@ -19,11 +26,24 @@ body p {
 	width: 1200px;
 	height: 280px;
 	margin: 0 auto;
-	background: lightgrey;
+  border: 10px solid $color-3;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
-.summary p:nth-of-type(2) {
-	border-top: 2px solid lightgrey;
+.summary p {
+  background-color: white;
+  &:nth-of-type(2) {
+    border-top: 2px solid lightgrey;
+  }
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  background-color: white;
 }
 
 h1 {
@@ -49,12 +69,7 @@ li {
 	content: " ";
 	width: 430px;
 	height: 250px;
-	background: lightgrey;
 	margin: 0 auto;
-}
-
-.design-archives, .zen-resources {
-	background-color: lightgrey;
 }
 
 h3.resources,
@@ -84,4 +99,10 @@ p[role="contentinfo"] {
 h3.select {
 	text-align: right;
 	margin-right: 2em;
+}
+
+.design-selection li {
+  background-color: $color-4;
+  box-sizing: border-box;
+  border: 3px solid $color-3;
 }
