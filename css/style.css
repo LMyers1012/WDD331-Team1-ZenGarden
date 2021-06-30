@@ -29,6 +29,11 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: #15362b; }
+  a:hover {
+    color: #24a57e; }
+
+abbr {
+  text-decoration: none; }
 
 @media only screen and (min-width: 1400px) {
   header {
@@ -46,16 +51,6 @@ a {
       border-bottom: 5px outset lightgrey; } }
 
 @media only screen and (min-width: 1400px) {
-  .summary:before {
-    content: " ";
-    width: 1200px;
-    height: 280px;
-    margin: 0 auto;
-    border: 10px solid #24a57e;
-    border-radius: 20px;
-    box-sizing: border-box; } }
-
-@media only screen and (min-width: 1400px) {
   .summary p {
     background-color: white;
     border-left: 5px solid #15362b;
@@ -67,6 +62,12 @@ a {
       border-top: 2px solid lightgrey;
       border-bottom: 5px solid #15362b;
       box-shadow: 0px 5px 10px 5px #15362b; } }
+
+@media only screen and (min-width: 1400px) {
+  .summary:before {
+    border: 10px solid #24a57e;
+    border-radius: 20px;
+    box-sizing: border-box; } }
 
 .preamble,
 .explanation,
@@ -112,7 +113,13 @@ footer {
   content: " ";
   display: block;
   padding-top: 10px;
-  border-top: 1px solid lightgrey; }
+  border-top: 5px solid #24a57e;
+  padding: 4em;
+  background-color: #15362b; }
+  footer a {
+    font-size: 1.5em;
+    color: #caf0e5;
+    margin: 15px; }
 
 p[role="contentinfo"] {
   padding-top: 10px; }
@@ -120,6 +127,15 @@ p[role="contentinfo"] {
 h3.select {
   text-align: right;
   color: #caf0e5; }
+
+.requirements p:nth-of-type(5) {
+  background-color: #15362b;
+  color: #caf0e5;
+  z-index: 2; }
+  .requirements p:nth-of-type(5) a {
+    color: #caf0e5; }
+    .requirements p:nth-of-type(5) a:hover {
+      color: #24a57e; }
 
 @media only screen and (min-width: 1400px) {
   .design-selection h3 {
@@ -137,7 +153,9 @@ h3.select {
   .design-selection li {
     background-color: #caf0e5;
     box-sizing: border-box;
-    border: 3px solid #24a57e; } }
+    border: 3px solid #24a57e; }
+    .design-selection li a:nth-of-type(1) {
+      font-size: 1.1em; } }
 
 @media only screen and (min-width: 1400px) {
   .design-archives {
@@ -350,6 +368,10 @@ h3.select {
       .intro .summary:before {
         grid-column: 1/4;
         grid-row: 1/5;
+        content: " ";
+        width: 1200px;
+        height: 280px;
+        margin: 0 auto;
         background-image: url(/resources/trees3.png);
         background-size: 100% auto;
         background-position: top 12% left 15%;

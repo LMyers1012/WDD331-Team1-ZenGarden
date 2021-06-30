@@ -66,6 +66,10 @@
       &:before {
         grid-column: 1/4;
         grid-row: 1/5;
+        content: " ";
+        width: 1200px;
+        height: 280px;
+        margin: 0 auto;
         @include window(12%, 15%, none);
         margin-top: 2em;
       }

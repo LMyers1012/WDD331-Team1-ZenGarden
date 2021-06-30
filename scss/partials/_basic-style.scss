@@ -21,6 +21,13 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: $color-2;
+  &:hover {
+    color: $color-3;
+  }
+}
+
+abbr {
+  text-decoration: none;
 }
 
 header {
@@ -43,31 +50,28 @@ header {
   }
 }
 
-.summary:before {
-  @include MQ(L) {
-    content: " ";
-    width: 1200px;
-    height: 280px;
-    margin: 0 auto;
-    border: 10px solid $color-3;
-    border-radius: 20px;
-    box-sizing: border-box;
-  }
-}
-
-.summary p {
-  @include MQ(L) {
-    background-color: white;
-    border-left: 5px solid $color-2;
-    border-right: 5px solid $color-2;
-    &:nth-of-type(1) {
-      border-top: 5px solid $color-2;
-      box-shadow: 0px -5px 10px 5px $color-2;
+.summary {
+  p {
+    @include MQ(L) {
+      background-color: white;
+      border-left: 5px solid $color-2;
+      border-right: 5px solid $color-2;
+      &:nth-of-type(1) {
+        border-top: 5px solid $color-2;
+        box-shadow: 0px -5px 10px 5px $color-2;
+      }
+      &:nth-of-type(2) {
+        border-top: 2px solid lightgrey;
+        border-bottom: 5px solid $color-2;
+        box-shadow: 0px 5px 10px 5px $color-2;
+      }
     }
-    &:nth-of-type(2) {
-      border-top: 2px solid lightgrey;
-      border-bottom: 5px solid $color-2;
-      box-shadow: 0px 5px 10px 5px $color-2;
+  }
+  &:before {
+    @include MQ(L) {
+      border: 10px solid $color-3;
+      border-radius: 20px;
+      box-sizing: border-box;
     }
   }
 }
@@ -123,7 +127,14 @@ footer {
 	content: " ";
 	display: block;
 	padding-top: 10px;
-	border-top: 1px solid lightgrey;
+	border-top: 5px solid $color-3;
+  padding: 4em;
+  background-color: $color-2;
+  a {
+    font-size: 1.5em;
+    color: $color-4;
+    margin: 15px;
+  }
 }
 
 p[role="contentinfo"] {
@@ -135,6 +146,17 @@ h3.select {
 	color: $color-4;
 }
 
+.requirements p:nth-of-type(5) {
+  background-color: $color-2;
+  color: $color-4;
+  z-index: 2;
+  a {
+    color: $color-4;
+    &:hover {
+      color: $color-3;
+    }
+  }
+}
 
 .design-selection {
   h3 {
@@ -156,6 +178,9 @@ h3.select {
       background-color: $color-4;
       box-sizing: border-box;
       border: 3px solid $color-3;
+      a:nth-of-type(1) {
+        font-size: 1.1em;
+      }
     }
   }
 }
