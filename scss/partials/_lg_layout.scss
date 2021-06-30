@@ -27,7 +27,7 @@
   .page-wrapper {
     display: grid;
     grid-template-columns: 450px 900px;
-    grid-template-rows: 250px 670px 1350px 500px 100px;
+    grid-template-rows: 270px 670px 1350px 500px 100px;
   }
 
   .intro {
@@ -35,10 +35,19 @@
     grid-row: 1/3;
     display: grid;
     grid-template-columns: repeat(9, 150px);
-    grid-template-rows: 250px 350px 320px;
+    grid-template-rows: 275px 350px 320px;
     header {
       grid-column: 1/4;
       grid-row: 1/2;
+      padding-top: 3em;
+      padding-left: 2em;
+      h1, h2 {
+        margin: 0;
+        padding: 20px 5px 10px 8px;
+      }
+      h2 {
+        padding: 10px 0 20px 4em;
+      }
     }
     .summary {
       grid-column: 1/10;
@@ -131,7 +140,7 @@
         grid-column: 5/8;
         grid-row: 1/4;
         @include window(37%, 65%, right);
-        margin-left: 4em;
+        margin-left: 3em;
         border: 10px solid $color-3;
       }
       h3 {
@@ -198,7 +207,7 @@
         grid-column: 5/8;
         grid-row: 1/3;
         @include window(67%, 65%, right);
-        margin-left: 4em;
+        margin-left: 3em;
         border: 10px solid $color-3;
       }
       h3 {
@@ -268,16 +277,20 @@
     .wrapper {
       display: grid;
       grid-template-columns: 450px 900px;
-      grid-template-rows: 250px 2000px 230px 270px;
+      grid-template-rows: 270px 2000px 230px 270px;
+
+      //First sidebar child at TOP of page
       .design-selection {
         grid-column: 2/3;
         grid-row: 1/3;
         display: grid;
         grid-template-columns: 900px;
-        grid-template-rows: 50px 200px;
+        grid-template-rows: 50px 220px;
         h3 {
           grid-column: 1/2;
           grid-row: 1/2;
+          padding: .5em 2em 0 0;
+          margin: 0;
         }
         nav {
           grid-column: 1/2;
@@ -288,6 +301,8 @@
             grid-template-rows: 100px 100px;
             grid-gap: 5px;
             margin: 0 auto;
+            padding-bottom: 15px;
+            padding-right: 5px;
             li {
               text-align: center;
               border-radius: 100px 0 100px 0;
@@ -328,6 +343,8 @@
           }
         }
       }
+
+      //Second sidebar child, table at bottom of page
       .design-archives {
         grid-column: 1/3;
         grid-row: 3/4;
@@ -341,7 +358,9 @@
           grid-column: 1/2;
           grid-row: 1/2;
           margin: 0 auto;
-          padding: 10px 259.7px 0px 259.7px;
+          margin-left: 0;
+          margin-right: 0;
+          padding: 15px 259.7px 0px 259.7px;
         }
         nav {
           grid-column: 1/2;
@@ -354,13 +373,15 @@
           margin: 0;
           li {
             margin: 0 auto;
+            margin-left: 0;
+            margin-right: 0;
             padding-top: 5px;
           }
           li:nth-of-type(1) {
             grid-column: 1/4;
             grid-row: 1/2;
             padding-left: 100px;
-            padding-right: 100px;
+            padding-right: 90px;
           }
           li:nth-of-type(2) {
             grid-column: 4/7;
@@ -370,6 +391,8 @@
           }
         }
       }
+
+      //Third sidebar child, table at bottom of page
       .zen-resources {
         grid-column: 1/3;
         grid-row: 4/5;
@@ -383,7 +406,9 @@
           grid-column: 1/2;
           grid-row: 1/2;
           margin: 0 auto;
-          padding: 10px 254.5px 0px 254.5px;
+          margin-left: 0;
+          margin-right: 0;
+          padding: 15px 254.5px 0px 254.5px;
         }
         ul {
           grid-column: 1/2;
@@ -394,6 +419,8 @@
           padding: 0;
           li {
             margin: 0 auto;
+            margin-left: 0;
+            margin-right: 0;
             padding-top: 5px;
           }
           li:nth-of-type(1) {

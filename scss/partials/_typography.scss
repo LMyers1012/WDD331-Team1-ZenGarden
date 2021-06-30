@@ -12,6 +12,10 @@ h1,
 h2 {
   font-family: $secondary-font;
   color: $color-2;
+  @include MQ(L) {
+    color: $color-4;
+  }
+  
 }
 
 h1 {
