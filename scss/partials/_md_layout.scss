@@ -1,12 +1,17 @@
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 1399px) {
   // breakpoints
 
-  $background: url(/resources/trees3.png);
-  @mixin window($top, $right) {
+  @mixin window($top, $right, $border-type) {
     background-image: $background;
     background-size: 100% auto;
     background-position: top $top left $right;
     background-attachment: fixed;
+    @if $border-type == "left" {
+      border-radius: 0px 200px;
+    }
+    @if $border-type == "right" {
+      border-radius: 200px 0px;
+    }
   }
 
   // Medium layout
@@ -19,4 +24,98 @@
   header {
     padding: 1em;
   }
+
+  .page-wrapper {
+    display: grid;
+    grid-template: 940px 1750px 100px/780px;
+
+    .intro {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: grid;
+      grid-template: 300px 320px 320px/780px;
+      header {
+        grid-row: 1/2;
+      }
+      .summary {
+        grid-row: 2/3;
+      }
+      .preamble {
+        grid-row: 3/4;
+      }
+    }
+
+    .supporting {
+      grid-column: 1/2;
+      grid-row: 2/4;
+      display: grid;
+      grid-template: 325px 275px 250px 400px 500px 100px/780px;
+      .explanation {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      .participation {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+      .benefits {
+        grid-row: 3/4;
+        grid-column: 1/2;
+      }
+      .requirements {
+        grid-row: 4/7;
+        grid-column: 1/2;
+        display: grid;
+        grid-template: 125px 125px 75px 75px 500px 100px/390px 390px;
+        p:nth-of-type(1) {
+          grid-column: 1/3;
+          grid-row: 1/2;
+        }
+        p:nth-of-type(2) {
+          grid-column: 1/3;
+          grid-row: 2/3;
+        }
+        p:nth-of-type(3) {
+          grid-column: 1/3;
+          grid-row: 3/4;
+        }
+        p:nth-of-type(4) {
+          grid-column: 1/3;
+          grid-row: 4/5;
+        }
+        p:nth-of-type(5) {
+          grid-column: 2/3;
+          grid-row: 6/7;
+        }
+      }
+      footer{
+        grid-row: 6/7;
+        grid-column: 1/2;
+      }
+    }
+
+    .sidebar {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      .wrapper {
+        display: grid;
+        grid-template: 300px 1890px 250px 250px/780px;
+
+        .design-selection {
+          grid-row: 1/2;
+        }
+        .design-archives {
+          grid-row: 3/4;
+        }
+        .zen-resources {
+          grid-row: 4/5;
+        }
+      }
+    }
+  }
+
+
+
+
+
 }

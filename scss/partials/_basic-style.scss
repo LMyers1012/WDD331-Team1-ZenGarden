@@ -88,6 +88,9 @@ h1 {
 	font-size: 2em;
 	margin-top: 1em;
 	margin-left: 1em;
+  @include MQ(M) {
+    font-size: 1.5em;
+  }
 }
 
 h2 {
@@ -128,8 +131,10 @@ footer {
 	display: block;
 	padding-top: 10px;
 	border-top: 5px solid $color-3;
-  padding: 4em;
   background-color: $color-2;
+  @include MQ(L) {
+    padding: 4em;
+  }
   a {
     font-size: 1.5em;
     color: $color-4;

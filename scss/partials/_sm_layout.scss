@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1399px) {
   /*Flor's code*/
   $padding_thin: 3px;
   $padding_thick: 7px;
@@ -71,16 +71,24 @@
     order: 0;
   }
 
+  footer {
+    margin-top: 500px;
+  }
+
+  .requirements p:nth-of-type(5) {
+    float: right;
+  }
+
   .design-archives {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    margin: 0 auto;
+    margin-top: -500px;
+    justify-content: center;
     display: grid;
     grid-template: 60px 40px/600px;
+    margin-bottom: 55px;
     h3 {
       grid-column: 1/2;
       grid-row: 1/2;
-      margin: 0 auto;
+      margin: 0;
       padding: 10px 259.7px 0px 259.7px;
     }
     nav {
@@ -93,7 +101,7 @@
       padding: 0;
       margin: 0;
       li {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 5px;
       }
       li:nth-of-type(1) {
@@ -110,16 +118,16 @@
       }
     }
   }
+
   .zen-resources {
-    grid-column: 1/3;
-    grid-row: 4/5;
     display: grid;
     grid-template: 60px 80px/600px;
-
+    justify-content: center;
+    margin-bottom: 55px;
     h3 {
       grid-column: 1/2;
       grid-row: 1/2;
-      margin: 0 auto;
+      margin: 0;
       padding: 10px 254.5px 0px 254.5px;
     }
     ul {
@@ -130,7 +138,7 @@
       margin: 0;
       padding: 0;
       li {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 5px;
       }
       li:nth-of-type(1) {
