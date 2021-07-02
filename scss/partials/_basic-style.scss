@@ -67,6 +67,17 @@ a {
   &:hover {
     color: $color-3;
   }
+
+  .preamble::before,
+  .explanation::after,
+  .participation::before,
+  .benefits::after,
+  .requirements::before {
+    content: " ";
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+  }
 }
 
 abbr {
