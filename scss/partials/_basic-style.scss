@@ -3,9 +3,10 @@
 xBasic style
 
 -------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 html {
-	background-image: url(/resources/trees3.png);
+  background-image: url(/resources/trees3.png);
 }
 
 body {
@@ -14,6 +15,48 @@ body {
     font-size: 1em;
     margin: 0;
     line-height: 1;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  body p {
+    font-size: 3vw;
+    padding: 7px;
+  }
+  .preamble h3,
+  .participation h3,
+  .benefits h3 {
+    color: white;
+  }
+  h3 {
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: "Allura", cursive;
+    letter-spacing: 4px;
+  }
+
+  * p:nth-of-type(1) {
+    text-indent: 50px;
+    &::first-letter {
+      initial-letter: 2;
+      color: black;
+      font-size: 6vw;
+      line-height: 70px;
+      padding-right: 2px;
+      font-weight: bold;
+      font-family: "Allura", cursive;
+      margin-right: 2px;
+    }
+  }
+
+  .preamble,
+  .participation,
+  .benefits {
+    p:nth-of-type(1) {
+      &::first-letter {
+        color: white;
+      }
+    }
   }
 }
 
@@ -36,7 +79,8 @@ header {
     border-bottom: 5px solid $color-3;
     border-left: 5px solid $color-4;
     border-top: 5px solid $color-4;
-    h1, h2 {
+    h1,
+    h2 {
       background-color: $color-1;
       border-left: 5px outset lightgrey;
       border-right: 5px outset lightgrey;
@@ -45,7 +89,7 @@ header {
       border-top: 5px outset lightgrey;
     }
     h2 {
-      border-bottom:  5px outset lightgrey;
+      border-bottom: 5px outset lightgrey;
     }
   }
 }
@@ -85,21 +129,21 @@ header {
 }
 
 h1 {
-	font-size: 2em;
-	margin-top: 1em;
-	margin-left: 1em;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-left: 1em;
   @include MQ(M) {
     font-size: 1.5em;
   }
 }
 
 h2 {
-	font-size: 1em;
-	padding-left: 4em;
+  font-size: 1em;
+  padding-left: 4em;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .preamble::before,
@@ -107,30 +151,30 @@ li {
 .participation::before,
 .benefits::after,
 .requirements::before {
-	content: " ";
-	width: 430px;
-	height: 250px;
-	margin: 0 auto;
+  content: " ";
+  width: 430px;
+  height: 250px;
+  margin: 0 auto;
 }
 
 h3.resources,
 h3.archives,
 .design-archives ul li,
 .zen-resources ul li {
-	background-color: white;
-	border: 2px solid grey;
+  background-color: white;
+  border: 2px solid grey;
 }
 
 .explanation,
 .benefits {
-	text-align: right;
+  text-align: right;
 }
 
 footer {
-	content: " ";
-	display: block;
-	padding-top: 10px;
-	border-top: 5px solid $color-3;
+  content: " ";
+  display: block;
+  padding-top: 10px;
+  border-top: 5px solid $color-3;
   background-color: $color-2;
   @include MQ(L) {
     padding: 4em;
@@ -143,12 +187,12 @@ footer {
 }
 
 p[role="contentinfo"] {
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
 h3.select {
-	text-align: right;
-	color: $color-4;
+  text-align: right;
+  color: $color-4;
 }
 
 .requirements p:nth-of-type(5) {
@@ -194,7 +238,7 @@ h3.select {
   @include MQ(L) {
     border-top: 5px outset $color-3;
     border-left: 5px outset $color-3;
-    border-right:  5px outset $color-3;
+    border-right: 5px outset $color-3;
     h3 {
       box-shadow: -5px -5px 10px 5px $color-2, 5px -5px 10px 5px $color-2;
     }
@@ -205,15 +249,13 @@ h3.select {
       box-shadow: 5px 5px 10px 5px $color-2;
     }
   }
-  
-  
 }
 
 .zen-resources {
   @include MQ(L) {
-    border-bottom:  5px outset $color-3;
+    border-bottom: 5px outset $color-3;
     border-left: 5px outset $color-3;
-    border-right:  5px outset $color-3;
+    border-right: 5px outset $color-3;
     h3 {
       box-shadow: -5px -5px 10px 5px $color-2, 5px -5px 10px 5px $color-2;
     }
@@ -232,6 +274,5 @@ h3.select {
     li.zen-translations {
       box-shadow: 5px 5px 10px 5px $color-2;
     }
-
   }
 }

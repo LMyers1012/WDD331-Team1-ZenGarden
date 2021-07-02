@@ -4,6 +4,12 @@
   $padding_thick: 7px;
   $padding_extra: 15px;
   $background: url(/resources/trees3.png);
+  @mixin window($top, $right) {
+    background-image: $background;
+    background-size: 100% auto;
+    background-position: top $top left $right;
+    background-attachment: fixed;
+  }
   body {
     width: 90%;
     margin: 0 auto;
@@ -15,18 +21,18 @@
     margin-bottom: $padding_extra;
     padding-bottom: $padding_thick;
   }
+
   header {
     margin-bottom: 20px;
     border-bottom: $padding_thin solid $color-2;
     padding: $padding_thick;
-    order: 1;
   }
 
   .summary,
   .explanation,
   .requirements {
     padding: $padding_extra;
-    order: 2;
+
     text-align: justify;
   }
 
@@ -39,11 +45,12 @@
   .benefits,
   .requirements p:nth-of-type(5) {
     margin: $padding_extra;
-    order: 3;
+
     border: $padding_thin solid $color-3;
     padding: $padding_thick;
     background-color: $color-2;
     text-align: justify;
+    opacity: 0.9;
   }
 
   .preamble::after,
@@ -51,15 +58,22 @@
   .benefits::after {
     content: "";
     display: flex;
-    order: 2;
+
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     height: 300px;
-    background-image: $background;
-    background-size: 100% auto;
-    background-attachment: fixed;
     padding-top: $padding_extra;
+  }
+
+  .preamble:after {
+    @include window(12%, 15%);
+  }
+  .participation:after {
+    @include window(35%, 15%);
+  }
+  .benefits:after {
+    @include window(50%, 15%);
   }
 
   .design-selection nav {
@@ -68,7 +82,6 @@
 
   .design-selection {
     display: flex;
-    order: 0;
   }
 
   footer {
@@ -76,7 +89,12 @@
   }
 
   .requirements p:nth-of-type(5) {
-    float: right;
+    /*By Dave Shea. */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $padding_extra * 5;
+    margin-bottom: $padding_thick;
   }
 
   .design-archives {
@@ -172,5 +190,8 @@
         padding-right: 58.725px;
       }
     }
+  }
+  .select {
+    display: none;
   }
 }
