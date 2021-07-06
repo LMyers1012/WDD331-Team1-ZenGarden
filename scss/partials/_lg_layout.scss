@@ -1,4 +1,4 @@
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   // Lindsey Myers's Code
 
   $background: url(/resources/trees3.png);
@@ -17,7 +17,7 @@
 
   // Large Layout
   body {
-    width: 1350px;
+    width: 1170px;
     margin: 0 auto;
     margin-top: 2em;
   }
@@ -26,7 +26,7 @@
 
   .page-wrapper {
     display: grid;
-    grid-template-columns: 450px 900px;
+    grid-template-columns: 390px 780px;
     grid-template-rows: 270px 670px 1350px 500px 100px;
   }
 
@@ -34,20 +34,20 @@
     grid-column: 1/3;
     grid-row: 1/3;
     display: grid;
-    grid-template-columns: repeat(9, 150px);
+    grid-template-columns: repeat(9, 130px);
     grid-template-rows: 275px 350px 320px;
     header {
       grid-column: 1/4;
       grid-row: 1/2;
-      padding-top: 3em;
-      padding-left: 2em;
-      h1,
-      h2 {
+      padding-top: 2.7em;
+      padding-left: 1em;
+      h1 {
         margin: 0;
-        padding: 20px 5px 10px 8px;
+        padding: 40px 5px 10px 15px;
       }
       h2 {
-        padding: 10px 0 20px 4em;
+        margin: 0;
+        padding: 10px 0 40px 2em;
       }
     }
     .summary {
@@ -55,7 +55,7 @@
       grid-row: 2/3;
       margin: 0 auto;
       display: grid;
-      grid-template: 140px 70px 50px 20px/350px 500px 350px;
+      grid-template: 140px 70px 50px 20px/300px 500px 300px;
       align-items: center;
       p {
         margin: 0 auto;
@@ -68,7 +68,7 @@
         grid-column: 1/4;
         grid-row: 1/5;
         content: " ";
-        width: 1200px;
+        width: 1000px;
         height: 280px;
         margin: 0 auto;
         @include window(12%, 15%, none);
@@ -77,7 +77,7 @@
       p:nth-of-type(1) {
         grid-column: 2/3;
         grid-row: 2/3;
-        width: 500px;
+        width: 350px;
         height: 60px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -85,7 +85,7 @@
       p:nth-of-type(2) {
         grid-column: 2/3;
         grid-row: 3/4;
-        width: 500px;
+        width: 350px;
         height: 40px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -95,14 +95,14 @@
       grid-column: 1/10;
       grid-row: 3/4;
       display: grid;
-      grid-template-columns: repeat(9, 150px);
+      grid-template-columns: repeat(9, 130px);
       grid-template-rows: 60px repeat(3, 80px);
       padding-top: 20px;
       &:before {
-        grid-column: 3/6;
+        grid-column: 2/6;
         grid-row: 1/5;
         @include window(25%, 25%, left);
-        margin-left: -3em;
+        margin-left: 0;
         border: 10px solid $color-3;
       }
       h3 {
@@ -131,21 +131,21 @@
     grid-column: 1/3;
     grid-row: 3/6;
     display: grid;
-    grid-template-columns: repeat(9, 150px);
+    grid-template-columns: repeat(9, 130px);
     grid-template-rows: 300px 350px 300px 400px 500px 100px;
     align-items: center;
     .explanation {
       grid-column: 1/10;
       grid-row: 1/2;
       display: grid;
-      grid-template-columns: repeat(9, 150px);
+      grid-template-columns: repeat(9, 130px);
       grid-template-rows: 60px 120px 120px;
       align-items: center;
       &:after {
-        grid-column: 5/8;
+        grid-column: 5/9;
         grid-row: 1/4;
         @include window(37%, 65%, right);
-        margin-left: 3em;
+        margin-right: 0;
         border: 10px solid $color-3;
       }
       h3 {
@@ -169,14 +169,14 @@
       grid-column: 1/10;
       grid-row: 2/3;
       display: grid;
-      grid-template-columns: repeat(9, 150px);
+      grid-template-columns: repeat(9, 130px);
       grid-template-rows: 60px repeat(3, 80px);
       align-items: center;
       &::before {
-        grid-column: 3/6;
+        grid-column: 2/6;
         grid-row: 1/5;
         @include window(50%, 40%, left);
-        margin-left: -3em;
+        margin-left: 0;
         border: 10px solid $color-3;
       }
       h3 {
@@ -204,15 +204,15 @@
       grid-column: 1/10;
       grid-row: 3/4;
       display: grid;
-      grid-template-columns: repeat(9, 150px);
+      grid-template-columns: repeat(9, 130px);
       grid-template-rows: 60px 240px;
       align-items: center;
       padding-bottom: 2em;
       &:after {
-        grid-column: 5/8;
+        grid-column: 5/9;
         grid-row: 1/3;
         @include window(67%, 65%, right);
-        margin-left: 3em;
+        margin-right: 0;
         border: 10px solid $color-3;
       }
       h3 {
@@ -232,14 +232,14 @@
       grid-column: 1/10;
       grid-row: 4/7;
       display: grid;
-      grid-template-columns: repeat(9, 150px);
+      grid-template-columns: repeat(9, 130px);
       grid-template-rows: 60px 80px 120px 70px 70px 500px 150px;
       align-items: center;
       &:before {
-        grid-column: 3/6;
+        grid-column: 2/6;
         grid-row: 1/6;
         @include window(80%, 40%, left);
-        margin-left: -3em;
+        margin-left: 0;
         border: 10px solid $color-3;
       }
       h3 {
@@ -281,7 +281,7 @@
     grid-row: 1/5;
     .wrapper {
       display: grid;
-      grid-template-columns: 450px 900px;
+      grid-template-columns: 390px 780px;
       grid-template-rows: 270px 2000px 230px 270px;
 
       //First sidebar child at TOP of page
@@ -289,7 +289,7 @@
         grid-column: 2/3;
         grid-row: 1/3;
         display: grid;
-        grid-template-columns: 900px;
+        grid-template-columns: 780px;
         grid-template-rows: 50px 220px;
         h3 {
           grid-column: 1/2;
@@ -311,7 +311,10 @@
             li {
               text-align: center;
               border-radius: 100px 0 100px 0;
-              padding: 30px;
+              padding: 25px 25px 10px 25px;
+              a:nth-of-type(1) {
+                display: block;
+              }
               &:nth-of-type(1) {
                 grid-column: 1/2;
                 grid-row: 1/2;
@@ -358,12 +361,14 @@
         padding: 50px 50px 25px 50px;
         display: grid;
         grid-template: 60px 40px/600px;
+        text-align: center;
         @include window(90%, 40%, none);
         h3 {
           grid-column: 1/2;
           grid-row: 1/2;
           margin: 0;
-          padding: 15px 259.7px 0px 259.7px;
+          width: 596px;
+          padding: 15px 0 0px 0;
         }
         nav {
           grid-column: 1/2;
@@ -381,14 +386,12 @@
           li:nth-of-type(1) {
             grid-column: 1/4;
             grid-row: 1/2;
-            padding-left: 100px;
-            padding-right: 90px;
+            width: 296px;
           }
           li:nth-of-type(2) {
             grid-column: 4/7;
             grid-row: 1/2;
-            padding-left: 91.588px;
-            padding-right: 91.588px;
+            width: 296px;
           }
         }
       }
@@ -402,12 +405,14 @@
         padding: 25px 50px 50px 50px;
         display: grid;
         grid-template: 60px 80px/600px;
+        text-align: center;
         @include window(96%, 40%, none);
         h3 {
           grid-column: 1/2;
           grid-row: 1/2;
           margin: 0;
-          padding: 15px 254.5px 0px 254.5px;
+          width: 596px;
+          padding: 15px 0 0px 0;
         }
         ul {
           grid-column: 1/2;
@@ -423,32 +428,27 @@
           li:nth-of-type(1) {
             grid-column: 1/4;
             grid-row: 1/2;
-            padding-left: 68.825px;
-            padding-right: 68.825px;
+            width: 296px;
           }
           li:nth-of-type(2) {
             grid-column: 4/7;
             grid-row: 1/2;
-            padding-left: 98.875px;
-            padding-right: 98.875px;
+            width: 296px;
           }
           li:nth-of-type(3) {
             grid-column: 1/3;
             grid-row: 2/3;
-            padding-left: 82.588px;
-            padding-right: 82.588px;
+            width: 196px;
           }
           li:nth-of-type(4) {
             grid-column: 3/5;
             grid-row: 2/3;
-            padding-left: 44.663px;
-            padding-right: 44.663px;
+            width: 196px;
           }
           li:nth-of-type(5) {
             grid-column: 5/7;
             grid-row: 2/3;
-            padding-left: 58.725px;
-            padding-right: 58.725px;
+            width: 196px;
           }
         }
       }

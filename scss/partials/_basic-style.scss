@@ -18,7 +18,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1199px) {
   body p {
     font-size: 3vw;
     padding: 7px;
@@ -139,14 +139,10 @@ header {
   background-color: white;
 }
 
-h1 {
-  font-size: 2em;
+/*h1 {
   margin-top: 1em;
   margin-left: 1em;
-  @include MQ(M) {
-    font-size: 1.5em;
-  }
-}
+}*/
 
 h2 {
   font-size: 1em;
@@ -219,27 +215,23 @@ h3.select {
 }
 
 .design-selection {
-  h3 {
-    @include MQ(L) {
+  @include MQ(L) {
+    h3 {
       background-color: $color-2;
       border-right: 5px solid $color-4;
       border-top: 5px solid $color-4;
     }
-  }
-  nav ul {
-    @include MQ(L) {
+    nav ul {
       background-color: $color-2;
       border-bottom: 5px solid $color-3;
       border-right: 5px solid $color-4;
     }
-  }
-  li {
-    @include MQ(L) {
+    li {
       background-color: $color-4;
       box-sizing: border-box;
       border: 3px solid $color-3;
-      a:nth-of-type(1) {
-        font-size: 1.1em;
+      a:nth-of-type(2) {
+        font-size: .8em;
       }
     }
   }
