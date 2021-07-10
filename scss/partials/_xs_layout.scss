@@ -1,0 +1,17 @@
+@media screen and (max-width: 450px) {
+  .page-wrapper {
+    display: none;
+    background-color: aquamarine;
+  }
+  body:after {
+    content: "Here would be the extra small size.";
+    text-align: center;
+    font-size: larger;
+    margin: auto;
+    padding: 10px;
+    background-color: $color-4;
+    color: $color-2;
+    width: 100%;
+    height: 100%;
+  }
+}
