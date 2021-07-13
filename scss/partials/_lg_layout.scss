@@ -1,7 +1,7 @@
 @media screen and (min-width: 1200px) {
   // Lindsey Myers's Code
 
-  $background: url(/resources/trees3.png);
+  $background: url("../resources/trees3.png");
   @mixin window($top, $right, $border-type) {
     background-image: $background;
     background-size: 100% auto;

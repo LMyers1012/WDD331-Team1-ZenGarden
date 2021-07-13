@@ -3,7 +3,7 @@
   $padding_thin: 3px;
   $padding_thick: 7px;
   $padding_extra: 15px;
-  $background: url(/resources/trees3.png);
+  $background: url("../resources/trees3.png");
   @mixin window($top, $right) {
     background-image: $background;
     background-size: 100% auto;
@@ -246,7 +246,6 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 999;
     width: auto;
     height: 100%;
     ul li {
@@ -272,6 +271,7 @@
     flex-wrap: wrap;
     text-align: right;
     align-content: flex-end;
+    z-index: 102;
   }
   .select {
     width: 100%;
@@ -280,12 +280,18 @@
     top: 0;
     right: 0;
     color: $color-1;
+    z-index: 102;
   }
   .select:hover {
     color: yellow;
 
     & + nav {
       display: flex;
+      z-index: 103;
     }
+  }
+
+  .select nav:hover {
+    display: flex;
   }
 }
