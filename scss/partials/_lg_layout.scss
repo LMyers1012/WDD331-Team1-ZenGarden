@@ -3,10 +3,9 @@
 
   $background: url("../resources/trees3.png");
   @mixin window($top, $right, $border-type) {
-    background-image: $background;
+    background: $background repeat center center fixed;
     background-size: 100% auto;
     background-position: top $top left $right;
-    background-attachment: fixed;
     @if $border-type == "left" {
       border-radius: 0px 200px;
     }
