@@ -5,10 +5,8 @@
   $padding_extra: 15px;
   $background: url("../resources/trees3.png");
   @mixin window($top, $right) {
-    background-image: $background;
-    background-size: 100% auto;
+    background: $background repeat center center fixed;
     background-position: top $top left $right;
-    background-attachment: fixed;
   }
   body {
     width: 90%;
@@ -27,6 +25,9 @@
     margin-bottom: 20px;
     border-bottom: $padding_thin solid $color-2;
     padding: $padding_thick;
+    h1 {
+      width: 60%;
+    }
   }
 
   .summary,
@@ -71,10 +72,10 @@
     @include window(12%, 15%);
   }
   .participation:after {
-    @include window(35%, 15%);
+    @include window(60%, 15%);
   }
   .benefits:after {
-    @include window(50%, 15%);
+    @include window(80%, 15%);
   }
 
   footer {
@@ -291,19 +292,21 @@
   /*menu bar*/
   //.design-selection nav {
     /*display: flex;*/
-    /*display: none;
+    /*display: flex;
     order: -1;
     background-color: $color-4;
     position: fixed;
     top: 0;
     right: 0;
-    width: auto;
+    width: 0;
     height: 100%;
+
     ul li {
       display: block;
       color: $color-1;
       margin: auto;
       padding: 10px;
+
       a {
         color: $color-2;
         &:hover {
@@ -326,19 +329,21 @@
   }
   .select {
     width: 100%;
-    position: fixed;
+    position: absolute;
     padding: 10px;
-    top: 0;
-    right: 0;
+    top: 5%;
+    left: 60%;
     color: $color-1;
     z-index: 102;
+    background-color: $color-3;
+    font-size: 2vw;
+    color: antiquewhite;
   }
   .select:hover {
-    color: yellow;
-
+    color: $color-4;
     & + nav {
-      display: flex;
       z-index: 103;
+      width: auto;
     }
   }
 

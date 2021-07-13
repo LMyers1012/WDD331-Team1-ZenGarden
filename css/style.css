@@ -350,10 +350,9 @@ p {
         width: 1000px;
         height: 280px;
         margin: 0 auto;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
         background-position: top 12% left 15%;
-        background-attachment: fixed;
         margin-top: 2em; }
       .intro .summary p:nth-of-type(1) {
         grid-column: 2/3;
@@ -379,10 +378,9 @@ p {
       .intro .preamble:before {
         grid-column: 2/6;
         grid-row: 1/5;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
         background-position: top 25% left 25%;
-        background-attachment: fixed;
         border-radius: 0px 200px;
         margin-left: 0;
         border: 10px solid #24a57e; }
@@ -417,10 +415,9 @@ p {
       .supporting .explanation:after {
         grid-column: 5/9;
         grid-row: 1/4;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
         background-position: top 37% left 65%;
-        background-attachment: fixed;
         border-radius: 200px 0px;
         margin-right: 0;
         border: 10px solid #24a57e; }
@@ -445,10 +442,9 @@ p {
       .supporting .participation::before {
         grid-column: 2/6;
         grid-row: 1/5;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
         background-position: top 50% left 40%;
-        background-attachment: fixed;
         border-radius: 0px 200px;
         margin-left: 0;
         border: 10px solid #24a57e; }
@@ -477,10 +473,9 @@ p {
       .supporting .benefits:after {
         grid-column: 5/9;
         grid-row: 1/3;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
         background-position: top 67% left 65%;
-        background-attachment: fixed;
         border-radius: 200px 0px;
         margin-right: 0;
         border: 10px solid #24a57e; }
@@ -503,10 +498,9 @@ p {
       .supporting .requirements:before {
         grid-column: 2/6;
         grid-row: 1/6;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
         background-position: top 80% left 40%;
-        background-attachment: fixed;
         border-radius: 0px 200px;
         margin-left: 0;
         border: 10px solid #24a57e; }
@@ -601,10 +595,9 @@ p {
         display: grid;
         grid-template: 60px 40px/600px;
         text-align: center;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
-        background-position: top 90% left 40%;
-        background-attachment: fixed; }
+        background-position: top 90% left 40%; }
         .sidebar .wrapper .design-archives h3 {
           grid-column: 1/2;
           grid-row: 1/2;
@@ -639,10 +632,9 @@ p {
         display: grid;
         grid-template: 60px 80px/600px;
         text-align: center;
-        background-image: url("../resources/trees3.png");
+        background: url("../resources/trees3.png") repeat center center fixed;
         background-size: 100% auto;
-        background-position: top 96% left 40%;
-        background-attachment: fixed; }
+        background-position: top 96% left 40%; }
         .sidebar .wrapper .zen-resources h3 {
           grid-column: 1/2;
           grid-row: 1/2;
@@ -697,6 +689,8 @@ p {
     margin-bottom: 20px;
     border-bottom: 3px solid #15362b;
     padding: 7px; }
+    header h1 {
+      width: 60%; }
   .summary,
   .explanation,
   .requirements {
@@ -725,20 +719,14 @@ p {
     height: 300px;
     padding-top: 15px; }
   .preamble:after {
-    background-image: url("../resources/trees3.png");
-    background-size: 100% auto;
-    background-position: top 12% left 15%;
-    background-attachment: fixed; }
+    background: url("../resources/trees3.png") repeat center center fixed;
+    background-position: top 12% left 15%; }
   .participation:after {
-    background-image: url("../resources/trees3.png");
-    background-size: 100% auto;
-    background-position: top 35% left 15%;
-    background-attachment: fixed; }
+    background: url("../resources/trees3.png") repeat center center fixed;
+    background-position: top 60% left 15%; }
   .benefits:after {
-    background-image: url("../resources/trees3.png");
-    background-size: 100% auto;
-    background-position: top 50% left 15%;
-    background-attachment: fixed; }
+    background: url("../resources/trees3.png") repeat center center fixed;
+    background-position: top 80% left 15%; }
   footer {
     margin-top: 500px; }
   .requirements p:nth-of-type(5) {
@@ -940,19 +928,21 @@ p {
       z-index: 103; }
   /*menu bar*/
   /*display: flex;*/
-  /*display: none;
+  /*display: flex;
     order: -1;
     background-color: $color-4;
     position: fixed;
     top: 0;
     right: 0;
-    width: auto;
+    width: 0;
     height: 100%;
+
     ul li {
       display: block;
       color: $color-1;
       margin: auto;
       padding: 10px;
+
       a {
         color: $color-2;
         &:hover {
@@ -975,19 +965,21 @@ p {
   }
   .select {
     width: 100%;
-    position: fixed;
+    position: absolute;
     padding: 10px;
-    top: 0;
-    right: 0;
+    top: 5%;
+    left: 60%;
     color: $color-1;
     z-index: 102;
+    background-color: $color-3;
+    font-size: 2vw;
+    color: antiquewhite;
   }
   .select:hover {
-    color: yellow;
-
+    color: $color-4;
     & + nav {
-      display: flex;
       z-index: 103;
+      width: auto;
     }
   }
 
